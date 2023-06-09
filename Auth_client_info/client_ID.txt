@@ -1,0 +1,7 @@
+Client ID: 503839477536-fciochlgmn12i85rqg9c2jsa0bd39jtb.apps.googleusercontent.com
+
+Client secret: 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
+
+IOS
+
+503839477536-unhrqsdeuvf27f18hsdrcjd5cfil8h1s.apps.googleusercontent.com

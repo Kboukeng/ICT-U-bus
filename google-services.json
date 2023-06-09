@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "15507297534",
+    "firebase_url": "https://ict-u-bus-default-rtdb.firebaseio.com",
+    "project_id": "ict-u-bus",
+    "storage_bucket": "ict-u-bus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15507297534:android:8354a5aef7cd550b66c1af",
+        "android_client_info": {
+          "package_name": "kev.com.ICT_bus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15507297534-kg2u1eo1ugf46lrvlc92p632abtacauv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpALhx_7vUWSd4rnp6FWDlw2y8t-QbzYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15507297534-dmtmdj95kt89fe05aepbk99om7mcgq54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
