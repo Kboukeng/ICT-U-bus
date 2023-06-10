@@ -1,7 +1,7 @@
 import { useLayoutEffect, useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import * as React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, ScrollView } from "react-native";
 import { ListItem } from "react-native-elements";
 import { openDatabase } from "expo-sqlite";
 
@@ -55,36 +55,38 @@ const History = () => {
   }, []);
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>History</Text>
-      {bookings.length > 0 ? (
-        bookings.map((booking) => (
-          <ListItem key={booking.id} bottomDivider>
-            <ListItem.Content>
-              <ListItem.Title>{booking.session}</ListItem.Title>
-              <ListItem.Subtitle>{booking.point}</ListItem.Subtitle>
-              <ListItem.Subtitle>{booking.date}</ListItem.Subtitle>
-            </ListItem.Content>
-          </ListItem>
-        ))
-      ) : (
-        <Text>No bookings yet.</Text>
-      )}
-    </View>
+    <ScrollView>
+      <View>
+        <Text style={styles.header}>Your booking</Text>
+        {bookings.length > 0 ? (
+          bookings.map((bookings) => (
+            <ListItem key={bookings.id} bottomDivider style={styles.container}>
+              <ListItem.Content>
+                <ListItem.Title>{bookings.session}</ListItem.Title>
+                <ListItem.Subtitle>{bookings.point}</ListItem.Subtitle>
+                <ListItem.Subtitle>{bookings.date}</ListItem.Subtitle>
+              </ListItem.Content>
+            </ListItem>
+          ))
+        ) : (
+          <Text>No bookings yet.</Text>
+        )}
+      </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#fff",
+    flex: 10,
+    backgroundColor: "#1C2F31D1",
+    fontSize: 10,
+    margin: 10
   },
   header: {
-    fontSize: 24,
+    fontSize: 25,
     fontWeight: "bold",
-    marginBottom: 20,
+    color: "#0810FD",
   },
 });
 

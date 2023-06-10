@@ -97,7 +97,7 @@ const Home = () => {
         (tx) => {
           tx.executeSql(
             "INSERT INTO bookings (session, point, date) VALUES (?, ?, ?)",
-            [sessions, point, moment().format("YYYY-MM-DD HH:mm:ss")],
+            [session, point, moment().format("YYYY-MM-DD HH:mm:ss")],
             (_, { rows }) => {
               console.log("Booking successful:", rows);
             }
